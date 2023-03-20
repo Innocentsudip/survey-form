@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a web survey form.</p>
+    <form id="survey-form">
+      <input id="name" type="text" placeholder="Last name,First name" required><label id="name-label">Full name</label>
+      <input id="email" type="email" placeholder="email id" required><label id="email-label">Your valid email address</label>
+      <input id="number" type="number" min="11" max="13" placeholder="phone number"><label id="number-label">Your Phone number</label>
+    <fieldset>
+      <label for="dropdown">Your Profession
+        <select id="dropdown">
+         <option>Student</option>
+         <option>Worker</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <legend>What is your origin?</legend>
+    <label for="eu"><input id="eu" type="radio" name="eu-noneu" value="eu">Eu Citizen</label>
+    <label for="noneu"><input id="noneu" type="radio" name="eu-noneu" value="noneu">Non EU</label>
+    <fieldset>
+      <legend>Which language do you speak?</legend>
+      <label for="english"><input type="checkbox" value="english">English</label>
+      <label for="german"><input type="checkbox" value="german">German</label>
+      </fieldset>
+
+     <label for="feedback">
+       <textarea id="feedback" name="feedback">send your feedback</textarea>
+     </label>
+     <input id="submit" value="submit" type="submit" />
+    </form>
+  </body>
+</html>
